@@ -39,6 +39,14 @@ time, mark, audio, video {
 ul, li {
   list-style: none; }
 
+.test {
+  box-sizing: border-box; }
+
+a {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
 /*---------------------*/
 /*   2.
 /*---------------------*/
