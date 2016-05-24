@@ -54,6 +54,12 @@ body {
   font-size: 22px;
   color: #fff; }
 
+.title-blue {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 28px;
+  color: #00BE9A; }
+
 /*---------------------*/
 /*   2. Header
 /*---------------------*/
@@ -283,11 +289,7 @@ header {
 .section-7 {
   padding: 50px 0; }
   .section-7 h1 {
-    margin-bottom: 50px;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 28px;
-    color: #00BE9A; }
+    margin-bottom: 50px; }
 
 .galery-slider {
   width: 100%;
@@ -301,3 +303,171 @@ header {
 
 .galery-slider__slide-hover {
   display: none; }
+
+/*---------------------*/
+/*   10. Section 8
+/*---------------------*/
+.section-8 {
+  padding: 30px 0 50px; }
+
+.specials {
+  margin-top: 50px; }
+
+.specials-tabs {
+  float: left;
+  width: 40%; }
+  .specials-tabs li {
+    position: relative;
+    padding-left: 10%;
+    height: 100px;
+    line-height: 100px;
+    border-top: 2px solid #C2C4C4;
+    box-sizing: border-box;
+    cursor: pointer; }
+    .specials-tabs li:after {
+      content: '>';
+      position: absolute;
+      right: 40px;
+      color: #C2C4C4; }
+    .specials-tabs li.active {
+      background-color: #00BC9A;
+      color: #FFF; }
+      .specials-tabs li.active:after {
+        color: #FFF; }
+    .specials-tabs li:last-of-type {
+      border-bottom: 2px solid #C2C4C4; }
+
+.specials-contents {
+  float: left;
+  width: 60%;
+  height: 300px; }
+
+.specials-content {
+  position: relative;
+  width: 100%;
+  height: 100%; }
+  .specials-content h1 {
+    position: absolute;
+    padding: 10px 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 22px;
+    line-height: 32px; }
+  .specials-content a {
+    display: block;
+    width: 150px;
+    margin: 0 auto;
+    padding: 10px 0;
+    background-color: #00BC9A;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); }
+
+.specials-content__link-wrap {
+  position: absolute; }
+
+.specials-content--wedding {
+  background: url("../images/bg-specials/bg-specials-wedding.png");
+  background-size: cover; }
+  .specials-content--wedding h1 {
+    top: 100px;
+    width: 100%; }
+  .specials-content--wedding .specials-content__link-wrap {
+    position: absolute;
+    top: 230px;
+    left: 0;
+    width: 100%; }
+
+.specials-content--rent-hall {
+  background: url("../images/bg-specials/bg-specials-rent.png");
+  background-size: cover; }
+  .specials-content--rent-hall h1 {
+    top: 100px;
+    width: 80%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 78%, transparent 100%); }
+  .specials-content--rent-hall .specials-content__link-wrap {
+    position: absolute;
+    top: 230px;
+    left: 0;
+    width: 80%; }
+
+.specials-content--discount {
+  background: url("../images/bg-specials/bg-specials-discount.png");
+  background-size: cover; }
+  .specials-content--discount h1 {
+    top: 100px;
+    width: 80%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 78%, transparent 100%); }
+  .specials-content--discount .specials-content__link-wrap {
+    position: absolute;
+    top: 230px;
+    left: 0;
+    width: 80%; }
+
+/*---------------------*/
+/*   11. Section 9
+/*---------------------*/
+.section-9 {
+  height: 500px;
+  background: url("../images/bg-hall/bg-hall.png"); }
+  .section-9._birthday {
+    background: url("../images/bg-hall/bg-hall-birthday.png"); }
+  .section-9._business {
+    background: url("../images/bg-hall/bg-hall-business.png"); }
+  .section-9._new-year {
+    background: url("../images/bg-hall/bg-hall-new-year.png"); }
+  .section-9._party {
+    background: url("../images/bg-hall/bg-hall-party.png"); }
+  .section-9._wedding {
+    background: url("../images/bg-hall/bg-hall-wedding.png"); }
+
+.section-9-list {
+  position: relative;
+  height: 100%;
+  width: 400px;
+  margin: 0 auto;
+  padding-top: 150px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, transparent 100%);
+  box-sizing: border-box; }
+  .section-9-list h1 {
+    font-size: 22px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #00BC9A; }
+  .section-9-list ul {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 300px;
+    margin: 0 auto; }
+  .section-9-list li {
+    display: block;
+    padding: 17px 0;
+    border-bottom: 1px solid #00BC9A;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff; }
+    .section-9-list li:last-of-type {
+      border-bottom: 0; }
+    .section-9-list li:hover {
+      color: #00BC9A; }
+
+/*---------------------*/
+/*   12. Section 10
+/*---------------------*/
+.section-10 {
+  padding: 50px 0; }
+
+.clients-slider {
+  margin-top: 30px; }
+
+/*---------------------*/
+/*   13. Section 11
+/*---------------------*/
+/*---------------------*/
+/*   14. Section 12
+/*---------------------*/
