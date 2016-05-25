@@ -4,10 +4,37 @@
     <meta charset="utf-8" />
     <title>Достоевский</title>
 
+    <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
     <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+    <script src="http://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.bxslider').bxSlider({
+          infiniteLoop: false,
+          pager: false
+        });
+
+        $('.section-10 .bx-loading').remove();
+      });
+    </script>
+
+    <script type="text/javascript">
+        var map;
+
+        DG.then(function () {
+            map = DG.map('map', {
+                center: [54.98, 82.89],
+                zoom: 13
+            });
+
+            DG.marker([54.98, 82.89]).addTo(map).bindPopup('Вы кликнули по мне!');
+        });
+    </script>
 
 </head>
 <body>
@@ -265,30 +292,61 @@
   <section class="section-10">
     <h1 class="title-blue">Наши клиенты</h1>
 
-    <div class="clients-slider">
-      <div class="clients-slider__list">
-        <div class="clients-slider__item">
+    <ul class="bxslider clients-slider">
+      <li class="clients-slider__item">
+        <div class="clients-slider__photo">
           <div class="clients-slider__photo-wrap">
-            <img src="" alt="" />
-          </div>
-
-          <div class="clients-slider__content">
-            <h1 class="clients-slider__name">Евгения</h1>
-
-            <div class="clients-slider__text">
-              15.05.2015 праздновали здесь свою свадьбу! Все было на высшем уровне! Горячее, закуски, банкетное блюдо все прекрасно приготовленно, красиво оформленно и вовремя подано, без замечаний! Персонал постоянно в зале, постоянно в движении) свадьба была на 65 человек, места больше чем достаточно! Самый главный показатель хорошей свадьбы, это огромное множество благодарностей от довольных гостей!))
-            </div>
-
-            <div class="clients-slider__date">18.05.2015</div>
+            <img src="images/clients/client-1.jpg" alt="" />
           </div>
         </div>
-      </div>
 
-      <div class="clients-slider__ctrls">
-        <div class="clients-slider__next"></div>
-        <div class="clients-slider__prev"></div>
-      </div>
-    </div>
+        <div class="clients-slider__content">
+          <h1 class="clients-slider__name">Евгения</h1>
+
+          <div class="clients-slider__text">
+            15.05.2015 праздновали здесь свою свадьбу! Все было на высшем уровне! Горячее, закуски, банкетное блюдо все прекрасно приготовленно, красиво оформленно и вовремя подано, без замечаний! Персонал постоянно в зале, постоянно в движении) свадьба была на 65 человек, места больше чем достаточно! Самый главный показатель хорошей свадьбы, это огромное множество благодарностей от довольных гостей!))
+          </div>
+
+          <div class="clients-slider__date">18.05.2015</div>
+        </div>
+      </li>
+
+      <li class="clients-slider__item">
+        <div class="clients-slider__photo">
+          <div class="clients-slider__photo-wrap">
+            <img src="images/clients/client-1.jpg" alt="" />
+          </div>
+        </div>
+
+        <div class="clients-slider__content">
+          <h1 class="clients-slider__name">Евгения</h1>
+
+          <div class="clients-slider__text">
+            15.05.2015 праздновали здесь свою свадьбу! Все было на высшем уровне! Горячее, закуски, банкетное блюдо все прекрасно приготовленно, красиво оформленно и вовремя подано, без замечаний! Персонал постоянно в зале, постоянно в движении) свадьба была на 65 человек, места больше чем достаточно! Самый главный показатель хорошей свадьбы, это огромное множество благодарностей от довольных гостей!))
+          </div>
+
+          <div class="clients-slider__date">18.05.2015</div>
+        </div>
+      </li>
+
+      <li class="clients-slider__item">
+        <div class="clients-slider__photo">
+          <div class="clients-slider__photo-wrap">
+            <img src="images/clients/client-1.jpg" alt="" />
+          </div>
+        </div>
+
+        <div class="clients-slider__content">
+          <h1 class="clients-slider__name">Евгения</h1>
+
+          <div class="clients-slider__text">
+            15.05.2015 праздновали здесь свою свадьбу! Все было на высшем уровне! Горячее, закуски, банкетное блюдо все прекрасно приготовленно, красиво оформленно и вовремя подано, без замечаний! Персонал постоянно в зале, постоянно в движении) свадьба была на 65 человек, места больше чем достаточно! Самый главный показатель хорошей свадьбы, это огромное множество благодарностей от довольных гостей!))
+          </div>
+
+          <div class="clients-slider__date">18.05.2015</div>
+        </div>
+      </li>
+    </ul>
   </section>
 
   <section class="section-11">
@@ -297,18 +355,21 @@
       Доверите нам свой праздник?
     </h1>
 
-    <a href="#">Узнать свободна ли ваша дата</a>
+    <div class="blue-btn">
+      <a href="#">Узнать свободна ли ваша дата</a>
+    </div>
   </section>
 
   <footer>
-    <div class="container">
-      <h1 class="title--grey-bg">Контакты</h1>
+    <h1 class="title--grey-bg">Контакты</h1>
 
+    <div class="container">
       <p>
-        Обратитесь к нам и получите профессиональную консультацию по вопросам проведения любых мероприятий. Будем рады помочь Вам и ответить на все Ваши вопросы!
+        Обратитесь к нам и получите профессиональную консультацию по вопросам проведения любых мероприятий. <br>
+        Будем рады помочь Вам и ответить на все Ваши вопросы!
       </p>
 
-      <div class="">
+      <div class="footer-info clearfix">
         <div class="footer__visit-us">
           <h1>Посетите нас</h1>
 
@@ -338,6 +399,8 @@
           <img src="images/logo-with-butterfly.png" alt="" />
         </div>
       </div>
+
+      <div id="map" class="footer-map" style="width:100%; height:400px"></div>
     </div>
   </footer>
 

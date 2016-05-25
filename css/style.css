@@ -460,14 +460,124 @@ header {
 /*   12. Section 10
 /*---------------------*/
 .section-10 {
-  padding: 50px 0; }
+  padding: 50px 0 70px;
+  width: 95%;
+  margin: auto; }
+  .section-10 .bx-wrapper .bx-controls-direction a {
+    height: 110px;
+    width: 55px; }
+  .section-10 .bx-wrapper .bx-next {
+    background: url("../images/slider-next.png") no-repeat; }
+    .section-10 .bx-wrapper .bx-next:hover {
+      background: url("../images/slider-next-hover.png") no-repeat; }
+  .section-10 .bx-wrapper .bx-prev {
+    background: url("../images/slider-prev.png") no-repeat; }
+    .section-10 .bx-wrapper .bx-prev:hover {
+      background: url("../images/slider-prev-hover.png") no-repeat; }
+  .section-10 .bx-wrapper .bx-viewport {
+    width: 900px !important;
+    margin: auto;
+    height: auto !important; }
 
 .clients-slider {
   margin-top: 30px; }
 
+.clients-slider__item {
+  display: table;
+  width: 100%; }
+
+.clients-slider__photo {
+  display: table-cell;
+  vertical-align: top; }
+
+.clients-slider__photo-wrap {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border: 1px solid #828692;
+  border-radius: 50%;
+  overflow: hidden; }
+  .clients-slider__photo-wrap img {
+    position: absolute;
+    left: -20%;
+    height: 100%; }
+
+.clients-slider__content {
+  display: table-cell;
+  vertical-align: top;
+  padding-left: 30px; }
+
+.clients-slider__name {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #00BE9A; }
+
+.clients-slider__text {
+  font-style: italic;
+  font-size: 14px; }
+
+.clients-slider__date {
+  margin-top: 10px;
+  text-align: right;
+  font-size: 14px; }
+
 /*---------------------*/
 /*   13. Section 11
 /*---------------------*/
+.section-11 {
+  position: relative;
+  height: 500px;
+  padding: 130px 0 0 0;
+  background: url("../images/bg-bottom.png") no-repeat;
+  background-size: cover; }
+  .section-11 h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFF;
+    font-size: 50px;
+    line-height: 60px; }
+  .section-11 .blue-btn {
+    position: absolute;
+    bottom: 100px;
+    width: 100%;
+    text-align: center; }
+    .section-11 .blue-btn a {
+      display: inline-block;
+      padding: 15px 50px;
+      background-color: #00BE9A;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #fff;
+      font-size: 18px; }
+
 /*---------------------*/
-/*   14. Section 12
+/*   14. Footer
 /*---------------------*/
+footer {
+  padding: 50px 0;
+  background: url("../images/separator-grey.png") repeat-x; }
+  footer h1.title--grey-bg {
+    margin-bottom: 50px; }
+
+.footer-info {
+  margin-top: 30px; }
+
+.footer__visit-us,
+.footer__contact-us {
+  float: left;
+  margin-right: 50px; }
+  .footer__visit-us h1,
+  .footer__contact-us h1 {
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    color: #00BE9A; }
+
+.footer-logo {
+  float: right;
+  margin-right: 200px; }
+
+.footer-map {
+  margin-top: 30px;
+  border: 2px solid #C2C4C4;
+  border-radius: 5px; }
