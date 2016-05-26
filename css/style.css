@@ -96,6 +96,10 @@ header {
     margin-right: 20px;
     width: 20px;
     height: 20px; }
+    .header-social li a {
+      display: block;
+      width: 100%;
+      height: 100%; }
     .header-social li:last-of-type {
       margin-right: 0; }
 
@@ -166,7 +170,37 @@ header {
   width: 130px;
   height: 80px;
   background: url("../images/butterfly.png") no-repeat;
-  background-size: contain; }
+  background-size: contain;
+  -webkit-animation: butterfly 1s ease-in-out;
+  animation: butterfly 1s ease-in-out; }
+
+@-webkit-keyframes butterfly {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  33% {
+    -webkit-transform: rotate(10deg);
+    transform: rotate(10deg); }
+  66% {
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg); }
+  to {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); } }
+
+@keyframes butterfly {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  33% {
+    -webkit-transform: rotate(10deg);
+    transform: rotate(10deg); }
+  66% {
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg); }
+  to {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); } }
 
 /*---------------------*/
 /*   4. Section 2
@@ -369,39 +403,39 @@ header {
 .specials-content__link-wrap {
   position: absolute; }
 
-.specials-content--wedding {
+.specials-content._wedding {
   background: url("../images/bg-specials/bg-specials-wedding.png");
   background-size: cover; }
-  .specials-content--wedding h1 {
+  .specials-content._wedding h1 {
     top: 100px;
     width: 100%; }
-  .specials-content--wedding .specials-content__link-wrap {
+  .specials-content._wedding .specials-content__link-wrap {
     position: absolute;
     top: 230px;
     left: 0;
     width: 100%; }
 
-.specials-content--rent-hall {
+.specials-content._rent-hall {
   background: url("../images/bg-specials/bg-specials-rent.png");
   background-size: cover; }
-  .specials-content--rent-hall h1 {
+  .specials-content._rent-hall h1 {
     top: 100px;
     width: 80%;
     background: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 78%, transparent 100%); }
-  .specials-content--rent-hall .specials-content__link-wrap {
+  .specials-content._rent-hall .specials-content__link-wrap {
     position: absolute;
     top: 230px;
     left: 0;
     width: 80%; }
 
-.specials-content--discount {
+.specials-content._discount {
   background: url("../images/bg-specials/bg-specials-discount.png");
   background-size: cover; }
-  .specials-content--discount h1 {
+  .specials-content._discount h1 {
     top: 100px;
     width: 80%;
     background: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 78%, transparent 100%); }
-  .specials-content--discount .specials-content__link-wrap {
+  .specials-content._discount .specials-content__link-wrap {
     position: absolute;
     top: 230px;
     left: 0;
@@ -413,15 +447,15 @@ header {
 .section-9 {
   height: 500px;
   background: url("../images/bg-hall/bg-hall.png"); }
-  .section-9._birthday {
+  .section-9[data-bg="_birthday"] {
     background: url("../images/bg-hall/bg-hall-birthday.png"); }
-  .section-9._business {
+  .section-9[data-bg="_business"] {
     background: url("../images/bg-hall/bg-hall-business.png"); }
-  .section-9._new-year {
+  .section-9[data-bg="_new-year"] {
     background: url("../images/bg-hall/bg-hall-new-year.png"); }
-  .section-9._party {
+  .section-9[data-bg="_party"] {
     background: url("../images/bg-hall/bg-hall-party.png"); }
-  .section-9._wedding {
+  .section-9[data-bg="_wedding"] {
     background: url("../images/bg-hall/bg-hall-wedding.png"); }
 
 .section-9-list {
@@ -453,7 +487,7 @@ header {
     color: #fff; }
     .section-9-list li:last-of-type {
       border-bottom: 0; }
-    .section-9-list li:hover {
+    .section-9-list li:hover, .section-9-list li.active {
       color: #00BC9A; }
 
 /*---------------------*/

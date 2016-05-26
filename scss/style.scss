@@ -119,6 +119,12 @@ header {
     width: 20px;
     height: 20px;
 
+    a {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
     &:last-of-type {
       margin-right: 0;
     }
@@ -204,6 +210,15 @@ header {
   height: 80px;
   background: url('../images/butterfly.png') no-repeat;
   background-size: contain;
+
+  animation: butterfly 1s ease-in-out;
+}
+
+@keyframes butterfly {
+  from {transform: rotate(0deg);}
+  33% {transform: rotate(10deg);}
+  66% {transform: rotate(-10deg);}
+  to {transform: rotate(0deg);}
 }
 
 /*---------------------*/
@@ -471,7 +486,7 @@ header {
   position: absolute;
 }
 
-.specials-content--wedding {
+.specials-content._wedding {
   background: url('../images/bg-specials/bg-specials-wedding.png');
   background-size: cover;
 
@@ -488,7 +503,7 @@ header {
   }
 }
 
-.specials-content--rent-hall {
+.specials-content._rent-hall {
   background: url('../images/bg-specials/bg-specials-rent.png');
   background-size: cover;
 
@@ -506,7 +521,7 @@ header {
   }
 }
 
-.specials-content--discount {
+.specials-content._discount {
   background: url('../images/bg-specials/bg-specials-discount.png');
   background-size: cover;
 
@@ -532,11 +547,11 @@ header {
   height: 500px;
   background: url('../images/bg-hall/bg-hall.png');
 
-  &._birthday { background: url('../images/bg-hall/bg-hall-birthday.png'); }
-  &._business { background: url('../images/bg-hall/bg-hall-business.png'); }
-  &._new-year { background: url('../images/bg-hall/bg-hall-new-year.png'); }
-  &._party { background: url('../images/bg-hall/bg-hall-party.png'); }
-  &._wedding { background: url('../images/bg-hall/bg-hall-wedding.png'); }
+  &[data-bg="_birthday"] { background: url('../images/bg-hall/bg-hall-birthday.png'); }
+  &[data-bg="_business"] { background: url('../images/bg-hall/bg-hall-business.png'); }
+  &[data-bg="_new-year"] { background: url('../images/bg-hall/bg-hall-new-year.png'); }
+  &[data-bg="_party"] { background: url('../images/bg-hall/bg-hall-party.png'); }
+  &[data-bg="_wedding"] { background: url('../images/bg-hall/bg-hall-wedding.png'); }
 }
 
 .section-9-list {
@@ -576,7 +591,8 @@ header {
       border-bottom: 0;
     }
 
-    &:hover {
+    &:hover,
+    &.active {
       color: #00BC9A;
     }
   }
