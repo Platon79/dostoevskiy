@@ -1,13 +1,12 @@
 $(document).ready(function(){
 
   // Change bg on hover
-  $('.section-9-list li').hover(function(){
+  $('.section-9-list li').mouseover(function(){
     var bgClass = $(this).attr('data-bg');
-    var bgSection = $('.section-9');
 
-    $('.section-9-list li').removeClass('active');
-    $(this).addClass('active');
-    bgSection.attr('data-bg', bgClass);
+    $('.section-9').attr('data-bg', bgClass);
+  }).mouseout(function(){
+    $('.section-9').attr('data-bg', '');
   });
 
   // Tabs
