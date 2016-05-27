@@ -28,7 +28,6 @@ time, mark, audio, video {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit;
   vertical-align: baseline;
 }
 
@@ -44,7 +43,68 @@ time, mark, audio, video {
 
 ul, li { list-style: none; }
 
-body { font-family: Arial; }
+/* font-family: "LatoRegular"; */
+@font-face {
+    font-family: "LatoRegular";
+    src: url("../fonts/LatoRegular/LatoRegular.eot");
+    src: url("../fonts/LatoRegular/LatoRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/LatoRegular/LatoRegular.woff") format("woff"),
+    url("../fonts/LatoRegular/LatoRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "LatoBold"; */
+@font-face {
+    font-family: "LatoBold";
+    src: url("../fonts/LatoBold/LatoBold.eot");
+    src: url("../fonts/LatoBold/LatoBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/LatoBold/LatoBold.woff") format("woff"),
+    url("../fonts/LatoBold/LatoBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "LatoItalic"; */
+@font-face {
+    font-family: "LatoItalic";
+    src: url("../fonts/LatoItalic/LatoItalic.eot");
+    src: url("../fonts/LatoItalic/LatoItalic.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/LatoItalic/LatoItalic.woff") format("woff"),
+    url("../fonts/LatoItalic/LatoItalic.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "LatoLight"; */
+@font-face {
+    font-family: "LatoLight";
+    src: url("../fonts/LatoLight/LatoLight.eot");
+    src: url("../fonts/LatoLight/LatoLight.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/LatoLight/LatoLight.woff") format("woff"),
+    url("../fonts/LatoLight/LatoLight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "LatoBoldItalic"; */
+@font-face {
+    font-family: "LatoBoldItalic";
+    src: url("../fonts/LatoBoldItalic/LatoBoldItalic.eot");
+    src: url("../fonts/LatoBoldItalic/LatoBoldItalic.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/LatoBoldItalic/LatoBoldItalic.woff") format("woff"),
+    url("../fonts/LatoBoldItalic/LatoBoldItalic.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "LatoLightItalic"; */
+@font-face {
+    font-family: "LatoLightItalic";
+    src: url("../fonts/LatoLightItalic/LatoLightItalic.eot");
+    src: url("../fonts/LatoLightItalic/LatoLightItalic.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/LatoLightItalic/LatoLightItalic.woff") format("woff"),
+    url("../fonts/LatoLightItalic/LatoLightItalic.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+html, body { font-family: 'LatoLight'; }
 
 .container {
   width: 1080px;
@@ -56,7 +116,7 @@ body { font-family: Arial; }
   background-color: #C2C4C4;
   text-align: center;
   text-transform: uppercase;
-  font-size: 22px;
+  font-size: 28px;
   color: #fff;
 }
 
@@ -172,6 +232,7 @@ header {
 
   span {
     font-size: 22px;
+    font-family: LatoRegular;
   }
 }
 
@@ -211,13 +272,14 @@ header {
   background: url('../images/butterfly.png') no-repeat;
   background-size: contain;
 
-  animation: butterfly 1s ease-in-out;
+  animation: butterfly 1.5s ease-in-out;
 }
 
 @keyframes butterfly {
   from {transform: rotate(0deg);}
-  33% {transform: rotate(10deg);}
-  66% {transform: rotate(-10deg);}
+  25% {transform: rotate(0deg);}
+  50% {transform: rotate(8deg);}
+  75% {transform: rotate(-8deg);}
   to {transform: rotate(0deg);}
 }
 
@@ -292,6 +354,7 @@ header {
   text-transform: uppercase;
   font-size: 28px;
   color: #fff;
+  text-shadow: -1px 3px rgba(0,0,0,0.3);
 }
 
 /*---------------------*/
@@ -367,8 +430,9 @@ header {
   right: 0;
   text-align: center;
   color: #fff;
-  line-height: 40px;
-  font-size: 30px;
+  line-height: 50px;
+  font-size: 34px;
+  text-shadow: -1px 3px rgba(0,0,0,0.3);
 }
 
 /*---------------------*/
@@ -466,6 +530,7 @@ header {
     text-align: center;
     text-transform: uppercase;
     font-size: 22px;
+    font-weight: normal;
     line-height: 32px;
   }
 
@@ -544,7 +609,7 @@ header {
 /*---------------------*/
 
 .section-9 {
-  height: 500px;
+  height: 550px;
   background: url('../images/bg-hall/bg-hall.png');
 
   &[data-bg="_birthday"] { background: url('../images/bg-hall/bg-hall-birthday.png'); }
@@ -564,7 +629,7 @@ header {
   box-sizing: border-box;
 
   h1 {
-    font-size: 22px;
+    font-size: 26px;
     text-align: center;
     text-transform: uppercase;
     color: #00BC9A;
@@ -702,6 +767,7 @@ header {
     color: #FFF;
     font-size: 50px;
     line-height: 60px;
+    font-weight: normal;
   }
 
   .blue-btn {
