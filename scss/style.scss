@@ -336,6 +336,32 @@ header {
   margin: 0 auto;
   border: 2px solid #80838F;
   border-radius: 50%;
+  overflow: hidden;
+}
+
+.section-2-col__img {
+  width: 100%;
+  height: 100%;
+  transition: 1s;
+
+  &._menu {
+    background: url('../images/menu.jpg') center no-repeat;
+    background-size: cover;
+  }
+
+  &._hall {
+    background: url('../images/hall.jpg') center no-repeat;
+    background-size: cover;
+  }
+
+  &._celebrity {
+    background: url('../images/celebrity.jpg') center no-repeat;
+    background-size: cover;
+  }
+
+  &:hover {
+    transform: scale(1.25);
+  }
 }
 
 /*---------------------*/
