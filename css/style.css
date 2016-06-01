@@ -303,20 +303,48 @@ header {
 .section-2-col__img {
   width: 100%;
   height: 100%;
-  transition: 1s; }
+  -webkit-animation: reduceImg 0.5s linear;
+  animation: reduceImg 0.5s linear; }
   .section-2-col__img._menu {
     background: url("../images/menu.jpg") center no-repeat;
-    background-size: cover; }
+    background-size: 340px; }
   .section-2-col__img._hall {
     background: url("../images/hall.jpg") center no-repeat;
-    background-size: cover; }
+    background-size: 340px; }
   .section-2-col__img._celebrity {
     background: url("../images/celebrity.jpg") center no-repeat;
-    background-size: cover; }
+    background-size: 340px; }
   .section-2-col__img:hover {
-    -webkit-transform: scale(1.25);
-    -ms-transform: scale(1.25);
-    transform: scale(1.25); }
+    -webkit-animation: increaseImg 0.5s linear;
+    animation: increaseImg 0.5s linear;
+    background-size: 400px; }
+  .section-2-col__img.unhover {
+    -webkit-animation: reduceImg 0.5s linear;
+    animation: reduceImg 0.5s linear; }
+
+@-webkit-keyframes increaseImg {
+  from {
+    background-size: 340px; }
+  to {
+    background-size: 400px; } }
+
+@keyframes increaseImg {
+  from {
+    background-size: 340px; }
+  to {
+    background-size: 400px; } }
+
+@-webkit-keyframes reduceImg {
+  from {
+    background-size: 400px; }
+  to {
+    background-size: 340px; } }
+
+@keyframes reduceImg {
+  from {
+    background-size: 400px; }
+  to {
+    background-size: 340px; } }
 
 /*---------------------*/
 /*   5. Section 3

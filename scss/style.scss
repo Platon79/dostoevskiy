@@ -342,26 +342,41 @@ header {
 .section-2-col__img {
   width: 100%;
   height: 100%;
-  transition: 1s;
+  animation: reduceImg 0.5s linear;
+
 
   &._menu {
     background: url('../images/menu.jpg') center no-repeat;
-    background-size: cover;
+    background-size: 340px;
   }
 
   &._hall {
     background: url('../images/hall.jpg') center no-repeat;
-    background-size: cover;
+    background-size: 340px;
   }
 
   &._celebrity {
     background: url('../images/celebrity.jpg') center no-repeat;
-    background-size: cover;
+    background-size: 340px;
   }
 
   &:hover {
-    transform: scale(1.25);
+    animation: increaseImg 0.5s linear;
+    background-size: 400px;
   }
+
+  &.unhover {
+    animation: reduceImg 0.5s linear;
+  }
+}
+
+@keyframes increaseImg {
+  from {background-size: 340px;}
+  to {background-size: 400px;}
+}
+@keyframes reduceImg {
+  from {background-size: 400px;}
+  to {background-size: 340px;}
 }
 
 /*---------------------*/
