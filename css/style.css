@@ -350,7 +350,8 @@ header {
 /*   5. Section 3
 /*---------------------*/
 .section-3 {
-  height: 650px;
+  position: relative !important;
+  height: 450px;
   padding-top: 50px;
   background: url("../images/bg-lamps.png") no-repeat; }
 
@@ -401,7 +402,7 @@ header {
 /*   8. Section 6
 /*---------------------*/
 .section-6 {
-  height: 600px;
+  height: 500px;
   background: url("../images/bg-fireplace.png") no-repeat; }
   .section-6 .container {
     position: relative; }

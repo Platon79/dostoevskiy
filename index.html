@@ -11,6 +11,7 @@
     <!-- JS -->
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+    <script type="text/javascript" src="js/enllax.js"></script>
     <script src="http://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
 
@@ -22,6 +23,8 @@
         });
 
         $('.section-10 .bx-loading').remove();
+
+        $(window).enllax();
       });
     </script>
 
@@ -129,7 +132,7 @@
     </div>
   </section>
 
-  <section class="section-3">
+  <section class="section-3" data-enllax-ratio="0.5">
     <div class="container">
       <div class="section-3__text">
         Человек устроен так, что когда<br>
@@ -181,7 +184,7 @@
     </div>
   </section>
 
-  <section class="section-6">
+  <section class="section-6" data-enllax-ratio="0.5">
     <div class="section-6__top-separator"></div>
 
     <div class="container">
@@ -351,7 +354,7 @@
     </ul>
   </section>
 
-  <section class="section-11">
+  <section class="section-11"  data-enllax-ratio="0.5">
     <h1>
       Ну что?<br>
       Доверите нам свой праздник?
