@@ -430,17 +430,69 @@ header {
     margin-bottom: 50px; }
 
 .galery-slider {
-  width: 100%;
-  overflow: hidden; }
-
-.galery-slider__slides {
-  width: 10000px; }
+  position: relative; }
+  .galery-slider .scrollWrapper {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%; }
+  .galery-slider .scrollableArea {
+    position: relative;
+    width: auto;
+    height: 100%; }
 
 .galery-slider__slide {
-  float: left; }
+  position: relative;
+  float: left;
+  height: 400px; }
+  .galery-slider__slide img {
+    height: 400px; }
+  .galery-slider__slide:hover .galery-slider__slide-hover {
+    display: block; }
 
 .galery-slider__slide-hover {
-  display: none; }
+  display: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); }
+
+.galery-slider__slide-btn {
+  position: absolute;
+  top: 40%;
+  width: 100%; }
+  .galery-slider__slide-btn div {
+    width: 150px;
+    margin: auto;
+    padding: 10px 0;
+    border: 1px solid #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer; }
+
+.scrollingHotSpotLeft,
+.scrollingHotSpotRight {
+  position: absolute;
+  top: 0;
+  height: 400px;
+  width: 70px;
+  opacity: 1 !important;
+  z-index: 10; }
+
+.scrollingHotSpotLeft {
+  left: 0;
+  background: url("../images/slider-prev.png") center no-repeat; }
+  .scrollingHotSpotLeft:hover {
+    background: url("../images/slider-prev-hover.png") center no-repeat; }
+
+.scrollingHotSpotRight {
+  right: 0;
+  background: url("../images/slider-next.png") center no-repeat; }
+  .scrollingHotSpotRight:hover {
+    background: url("../images/slider-next-hover.png") center no-repeat; }
 
 /*---------------------*/
 /*   10. Section 8
