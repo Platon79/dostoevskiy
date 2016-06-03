@@ -491,6 +491,7 @@ header {
 
 .galery-slider {
   position: relative;
+  opacity: 0;
 
   .scrollWrapper {
   	position: relative;
@@ -717,7 +718,7 @@ header {
 /*---------------------*/
 
 .section-9 {
-  height: 550px;
+  height: 620px;
   background: url('../images/bg-hall/bg-hall.png');
 
   &[data-bg="_birthday"] { background: url('../images/bg-hall/bg-hall-birthday.png'); }
@@ -732,7 +733,7 @@ header {
   height: 100%;
   width: 400px;
   margin: 0 auto;
-  padding-top: 150px;
+  padding-top: 200px;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
   box-sizing: border-box;
 
