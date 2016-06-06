@@ -616,17 +616,17 @@ header {
 /*---------------------*/
 .section-9 {
   height: 620px;
-  background: url("../images/bg-hall/bg-hall.png"); }
+  background: url("../images/bg-hall.jpg") center 0; }
   .section-9[data-bg="_birthday"] {
-    background: url("../images/bg-hall/bg-hall-birthday.png"); }
+    background-position: center 727px; }
   .section-9[data-bg="_business"] {
-    background: url("../images/bg-hall/bg-hall-business.png"); }
+    background-position: center 1454px; }
   .section-9[data-bg="_new-year"] {
-    background: url("../images/bg-hall/bg-hall-new-year.png"); }
+    background-position: center 2181px; }
   .section-9[data-bg="_party"] {
-    background: url("../images/bg-hall/bg-hall-party.png"); }
+    background-position: center 2908px; }
   .section-9[data-bg="_wedding"] {
-    background: url("../images/bg-hall/bg-hall-wedding.png"); }
+    background-position: center 3635px; }
 
 .section-9-list {
   position: relative;

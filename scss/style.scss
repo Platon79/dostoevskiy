@@ -736,13 +736,13 @@ header {
 
 .section-9 {
   height: 620px;
-  background: url('../images/bg-hall/bg-hall.png');
+  background: url('../images/bg-hall.jpg') center 0;
 
-  &[data-bg="_birthday"] { background: url('../images/bg-hall/bg-hall-birthday.png'); }
-  &[data-bg="_business"] { background: url('../images/bg-hall/bg-hall-business.png'); }
-  &[data-bg="_new-year"] { background: url('../images/bg-hall/bg-hall-new-year.png'); }
-  &[data-bg="_party"] { background: url('../images/bg-hall/bg-hall-party.png'); }
-  &[data-bg="_wedding"] { background: url('../images/bg-hall/bg-hall-wedding.png'); }
+  &[data-bg="_birthday"] { background-position: center 727px;}
+  &[data-bg="_business"] { background-position: center 1454px; }
+  &[data-bg="_new-year"] { background-position: center 2181px; }
+  &[data-bg="_party"] { background-position: center 2908px; }
+  &[data-bg="_wedding"] { background-position: center 3635px; }
 }
 
 .section-9-list {
