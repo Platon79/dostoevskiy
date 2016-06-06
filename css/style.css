@@ -173,9 +173,17 @@ header {
 /*   3. Section 1
 /*---------------------*/
 .section-1 {
+  position: relative;
   height: 600px;
   padding-top: 30px;
   background: url("../images/bg-top.png") center no-repeat; }
+  .section-1:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 16px;
+    background: url("../images/separator.png") repeat-x; }
   .section-1 .container {
     position: relative;
     height: 100%; }
@@ -260,8 +268,7 @@ header {
 /*   4. Section 2
 /*---------------------*/
 .section-2 {
-  padding: 50px 0 70px;
-  background: url("../images/separator-black.png") top repeat-x; }
+  padding: 50px 0 70px; }
 
 .section-2__cols {
   display: table;
@@ -354,6 +361,13 @@ header {
   height: 450px;
   padding-top: 50px;
   background: url("../images/bg-lamps.png") no-repeat; }
+  .section-3:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 16px;
+    background: url("../images/separator.png") repeat-x; }
 
 .section-3__text {
   line-height: 50px;
@@ -367,8 +381,7 @@ header {
 /*   6. Section 4
 /*---------------------*/
 .section-4 {
-  padding: 50px 0;
-  background: url("../images/separator-grey.png") top repeat-x; }
+  padding: 50px 0; }
 
 /*---------------------*/
 /*   7. Section 5
@@ -430,8 +443,7 @@ header {
     margin-bottom: 50px; }
 
 .galery-slider {
-  position: relative;
-  opacity: 0; }
+  position: relative; }
   .galery-slider .scrollWrapper {
     position: relative;
     overflow: hidden;
@@ -440,7 +452,8 @@ header {
   .galery-slider .scrollableArea {
     position: relative;
     width: auto;
-    height: 100%; }
+    height: 400px;
+    overflow-y: hidden; }
 
 .galery-slider__slide {
   position: relative;
@@ -720,7 +733,7 @@ header {
   position: relative;
   height: 500px;
   padding: 130px 0 0 0;
-  background: url("../images/bg-bottom.png") no-repeat;
+  background: url("../images/bg-bottom.jpg") no-repeat;
   background-size: cover; }
   .section-11 h1 {
     text-align: center;
