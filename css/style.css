@@ -618,15 +618,15 @@ header {
   height: 620px;
   background: url("../images/bg-hall.jpg") center 0; }
   .section-9[data-bg="_birthday"] {
-    background-position: center 727px; }
+    background-position: center 3634px; }
   .section-9[data-bg="_business"] {
+    background-position: center 2907px; }
+  .section-9[data-bg="_wedding"] {
+    background-position: center 727px; }
+  .section-9[data-bg="_party"] {
     background-position: center 1454px; }
   .section-9[data-bg="_new-year"] {
     background-position: center 2181px; }
-  .section-9[data-bg="_party"] {
-    background-position: center 2908px; }
-  .section-9[data-bg="_wedding"] {
-    background-position: center 3635px; }
 
 .section-9-list {
   position: relative;
