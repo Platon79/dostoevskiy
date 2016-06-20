@@ -176,7 +176,8 @@ header {
   position: relative;
   height: 600px;
   padding-top: 30px;
-  background: url("../images/bg-top.png") center no-repeat; }
+  background: url("../images/bg-top.png") center no-repeat;
+  background-size: cover; }
   .section-1:after {
     content: '';
     position: absolute;
@@ -360,7 +361,8 @@ header {
   position: relative !important;
   height: 450px;
   padding-top: 50px;
-  background: url("../images/bg-lamps.png") no-repeat; }
+  background: url("../images/bg-lamps.png") no-repeat;
+  background-size: cover; }
   .section-3:after {
     content: '';
     position: absolute;
@@ -416,7 +418,8 @@ header {
 /*---------------------*/
 .section-6 {
   height: 500px;
-  background: url("../images/bg-fireplace.png") no-repeat; }
+  background: url("../images/bg-fireplace.png") no-repeat;
+  background-size: cover; }
   .section-6 .container {
     position: relative; }
 
@@ -616,15 +619,15 @@ header {
 /*---------------------*/
 .section-9 {
   height: 620px;
-  background: url("../images/bg-hall.jpg") center 0; }
+  background: url("../images/bg-hall.jpg") center 0 repeat-y; }
   .section-9[data-bg="_birthday"] {
-    background-position: center 3634px; }
+    background-position: center -727px; }
   .section-9[data-bg="_business"] {
-    background-position: center 2907px; }
+    background-position: center -1454px; }
   .section-9[data-bg="_wedding"] {
-    background-position: center 727px; }
+    background-position: center -3634px; }
   .section-9[data-bg="_party"] {
-    background-position: center 1454px; }
+    background-position: center -2907px; }
   .section-9[data-bg="_new-year"] {
     background-position: center 2181px; }
 
