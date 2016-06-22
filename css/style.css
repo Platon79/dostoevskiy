@@ -663,6 +663,25 @@ header {
     .section-9-list li:hover, .section-9-list li.active {
       color: #00BC9A; }
 
+@media screen and (min-width: 1366px) {
+  .section-9 {
+    height: 750px;
+    background-image: url("../images/bg-hall/bg-hall.png");
+    background-size: cover;
+    background-position: center top !important; }
+    .section-9[data-bg="_birthday"] {
+      background-image: url("../images/bg-hall/bg-hall-birthday.png"); }
+    .section-9[data-bg="_business"] {
+      background-image: url("../images/bg-hall/bg-hall-business.png"); }
+    .section-9[data-bg="_wedding"] {
+      background-image: url("../images/bg-hall/bg-hall-wedding.png"); }
+    .section-9[data-bg="_party"] {
+      background-image: url("../images/bg-hall/bg-hall-party.png"); }
+    .section-9[data-bg="_new-year"] {
+      background-image: url("../images/bg-hall/bg-hall-new-year.png"); }
+  .section-9-list {
+    padding-top: 300px; } }
+
 /*---------------------*/
 /*   12. Section 10
 /*---------------------*/

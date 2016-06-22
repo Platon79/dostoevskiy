@@ -792,6 +792,23 @@ header {
   }
 }
 
+@media screen and (min-width: 1366px) {
+  .section-9 {
+    height: 750px;
+    background-image: url('../images/bg-hall/bg-hall.png');
+    background-size: cover;
+    background-position: center top !important;
+
+    &[data-bg="_birthday"] { background-image: url('../images/bg-hall/bg-hall-birthday.png'); }
+    &[data-bg="_business"] { background-image: url('../images/bg-hall/bg-hall-business.png'); }
+    &[data-bg="_wedding"] { background-image: url('../images/bg-hall/bg-hall-wedding.png'); }
+    &[data-bg="_party"] { background-image: url('../images/bg-hall/bg-hall-party.png'); }
+    &[data-bg="_new-year"] { background-image: url('../images/bg-hall/bg-hall-new-year.png'); }
+  }
+
+  .section-9-list { padding-top: 300px; }
+}
+
 /*---------------------*/
 /*   12. Section 10
 /*---------------------*/
