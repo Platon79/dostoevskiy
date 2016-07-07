@@ -666,19 +666,17 @@ header {
 @media screen and (min-width: 1366px) {
   .section-9 {
     height: 750px;
-    background-image: url("../images/bg-hall/bg-hall.png");
-    background-size: cover;
-    background-position: center top !important; }
+    background: url("../images/bg-hall--big.jpg") center 0 repeat-y; }
     .section-9[data-bg="_birthday"] {
-      background-image: url("../images/bg-hall/bg-hall-birthday.png"); }
+      background-position: center -1021px; }
     .section-9[data-bg="_business"] {
-      background-image: url("../images/bg-hall/bg-hall-business.png"); }
+      background-position: center -2044px; }
     .section-9[data-bg="_wedding"] {
-      background-image: url("../images/bg-hall/bg-hall-wedding.png"); }
+      background-position: center -5106px; }
     .section-9[data-bg="_party"] {
-      background-image: url("../images/bg-hall/bg-hall-party.png"); }
+      background-position: center -4085px; }
     .section-9[data-bg="_new-year"] {
-      background-image: url("../images/bg-hall/bg-hall-new-year.png"); }
+      background-position: center -3064px; }
   .section-9-list {
     padding-top: 300px; } }
 
